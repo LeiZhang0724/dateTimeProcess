@@ -1,8 +1,11 @@
 # dateTimeProcess
 Js function process date or time.  
 If you have new requiremnets of function please sent to 376218963@qq.com
+<<<<<<< HEAD
 # Source code
 If you have new requiremnets of function please sent to 376218963@qq.com
+=======
+>>>>>>> 31085ffab862370a0d2aba77453ebaa192ab10fd
 # Install
 npm i date-time-process-js -save
 
