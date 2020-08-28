@@ -1,0 +1,24 @@
+{
+  "name": "date-time-process-js",
+  "version": "1.0.1",
+  "description": "js functions process date or time",
+  "main": "dateTimeProcess.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeiZhang0724/dateTimeProcess.git"
+  },
+  "keywords": [
+    "js",
+    "date",
+    "time"
+  ],
+  "author": "masterjerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeiZhang0724/dateTimeProcess/issues"
+  },
+  "homepage": "https://github.com/LeiZhang0724/dateTimeProcess#readme"
+}
