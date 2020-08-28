@@ -1,10 +1,25 @@
 # dateTimeProcess
-Js function process date or time,
-
+Js function process date or time.  
 If you have new requiremnets of function please sent to 376218963@qq.com
+# Install
+npm i date-time-process-js -save
 
-Function List 
+# How to use
+import { function name } from 'date-time-process-js';
 
+# Example
+import {  getDay,  getDateTime 
+} from 'date-time-process-js';
+
+mounted() {  
+  getDay();  
+  getDateTime('yyyy-MM-dd')
+}
+
+results: 
+5
+2020-08-28
+# Function List 
 dateFormat = (date, format)
 
  * @method dateFormat
