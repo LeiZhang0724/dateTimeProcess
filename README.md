@@ -1,5 +1,6 @@
 # dateTimeProcess
 js function process date or time
+if you have new requiremnets of function please sent to 376218963@qq.com
 Function List 
 
 dateFormat = (date, format)
