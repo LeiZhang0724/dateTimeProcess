@@ -194,13 +194,13 @@ const getNDaysToDate = (count, direction, date = today, format= 'yyyy-MM-dd') =>
   }
 } 
 /**
- * @method getNowWeekList get date list of input date week , default as this week, start from Monday to Sunday
+ * @method getInputWeekList get date list of input date week , default as this week, start from Monday to Sunday
  * @param input_date default as today
  * @param format default as yyyy-MM-dd
  * @returns date (default format as yyyy-MM-dd) list of the week as input date week (default as today's week)
  * @hints dateList[i] can get i date of this week
  */
-const getNowWeekList = (input_date = today, format = 'yyyy-MM-dd') => {
+const getInputWeekList = (input_date = today, format = 'yyyy-MM-dd') => {
   let oneDayTime = 1000 * 60 * 60 * 24 
   let theDate = new Date(input_date)
   let theDay = theDate.getDay() || 7 
@@ -227,13 +227,13 @@ const getNumDateOfMonth = (input_date = today) => {
   return d.getDate();
 }
 /**
- * @method getNowMonthList get date list of input date month , default as this month
+ * @method getInputMonthList get date list of input date month , default as this month
  * @param input_date default as today
  * @param format default as yyyy-MM-dd
  * @return current_month list, date (default format as yyyy-MM-dd) list of the month as input date month (default as today's month)
  * @hints current_month[i] can get i date of this month
 */
-const getNowMonthList = (input_date = today, format = 'yyyy-MM-dd') => {
+const getInputMonthList = (input_date = today, format = 'yyyy-MM-dd') => {
   let theDate = new Date(input_date);
   let current_month_num = getNumDateOfMonth(input_date);
   let current_month = [];
@@ -275,8 +275,8 @@ export {
   getWeekNumOfYear,
   getGapOfTime,
   getNDaysToDate,
-  getNowWeekList,
+  getInputWeekList,
   getNumDateOfMonth,
-  getNowMonthList,
+  getInputMonthList,
   getFirstDayOfSeason
 }
