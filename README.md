@@ -126,9 +126,9 @@ results:
  * @returns date (default format as yyyy-MM-dd) of n days to the input date as diretion, default date is today
 ---
 
-    getNowWeekList = (input_date = today, format = 'yyyy-MM-dd')
+    getInputWeekList = (input_date = today, format = 'yyyy-MM-dd')
  
- * @method getNowWeekList get date list of input date week , default as this week, start from Monday to Sunday
+ * @method getInputWeekList get date list of input date week , default as this week, start from Monday to Sunday
  * @param input_date default as today
  * @param format default as yyyy-MM-dd
  * @returns date (default format as yyyy-MM-dd) list of the week as input date week (default as today's week)
@@ -142,9 +142,9 @@ results:
  * @returns date (default format as yyyy-MM-dd) list of the month as input date month (default as today's month)
 ---
 
-    getNowMonthList = (input_date = today, format = 'yyyy-MM-dd')
+    getInputMonthList = (input_date = today, format = 'yyyy-MM-dd')
 
- * @method getNowMonthList get date list of input date month , default as this month
+ * @method getInputMonthList get date list of input date month , default as this month
  * @param input_date default as today
  * @param format default as yyyy-MM-dd
  * @return current_month list, date (default format as yyyy-MM-dd) list of the month as input date month (default as today's month)
