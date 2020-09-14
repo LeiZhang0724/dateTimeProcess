@@ -1,6 +1,6 @@
 {
   "name": "date-time-process-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "js functions process date or time",
   "main": "dateTimeProcess.js",
   "scripts": {
