@@ -158,3 +158,10 @@ results:
  * @param input_date default as today
  * @return the first date of the season as format yyyy-MM-dd
  
+---
+    isInDayTime = (input_time, input_period)
+
+ * @method isInDayTime check two time plus is over 24 hours 
+ * @param input_time default format as hh:mm:ss
+ * @param input_period default format as hh:mm:ss
+ * @return if less than 24 hours return true, if greater than 24 hours return false

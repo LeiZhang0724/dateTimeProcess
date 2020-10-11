@@ -262,6 +262,28 @@ const getFirstDayOfSeason = (input_date = today) => {
   date.setDate(1);
   return dateFormat(date, 'yyyy-MM-dd');
 }
+/**
+ * @method isInDayTime check two time plus is over 24 hours,  
+ * @param input_time default format as hh:mm:ss
+ * @param input_period default format as hh:mm:ss
+ * @return if less than 24 hours return true, if greater than 24 hours return false
+ */
+
+const isInDayTime = (input_time, input_period) => {
+  let time1 = input_time.split(':')
+  let time2 = input_period.split(':')
+  let s= Number(time1[2]) + Number(time2[2])
+  let m = Number(time1[1]) + Number(time2[1])
+  let h = Number(time1[0]) + Number(time2[0])
+  if (s >= 60) m = m + 1;
+  if (m >= 60) h = h + 1;
+  if (h >= 24) {
+    return false
+  } else {
+    return true
+  }
+}
+
 export {
   dateFormat,
   getDateTime,
@@ -278,5 +300,6 @@ export {
   getInputWeekList,
   getNumDateOfMonth,
   getInputMonthList,
-  getFirstDayOfSeason
+  getFirstDayOfSeason,
+  isInDayTime
 }
