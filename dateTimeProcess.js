@@ -284,6 +284,30 @@ const isInDayTime = (input_time, input_period) => {
   }
 }
 
+/**
+ * @method getPreNDaysList get a list of N days before of today,  
+ * @param rage { number } N days before you want to return 要倒退的天数
+ * @return { array } return an array of N days before today
+ */
+ 
+const getPreNDaysList = (days) => {
+  if (days === '' || days === null || days === undefined || typeof days !== 'number') {
+    return false
+  }
+  var res = []// 返回数据
+  var today = new Date().getTime()// 今天
+  for (var i = 0; i < days; i++) {
+    var _day = new Date(today - 86400000 * i)
+    let year = _day.getFullYear()
+    let month = (_day.getMonth() + 1)
+    let day = _day.getDate()
+    month < 10 ? '0' + month : month
+    day < 10 ? '0' + day : day
+    res.push(year + '-' + month + '-' + day)
+  }
+  return res.reverse()
+}
+
 export {
   dateFormat,
   getDateTime,
@@ -301,5 +325,6 @@ export {
   getNumDateOfMonth,
   getInputMonthList,
   getFirstDayOfSeason,
-  isInDayTime
+  isInDayTime,
+  getPreNDaysList
 }

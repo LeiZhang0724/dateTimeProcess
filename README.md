@@ -165,3 +165,10 @@ results:
  * @param input_time default format as hh:mm:ss
  * @param input_period default format as hh:mm:ss
  * @return if less than 24 hours return true, if greater than 24 hours return false
+ 
+ ---
+	getPreNDaysList = (days)
+	
+ * @method getPreNDaysList get a list of N days before of today
+ * @param rage { number } N days before you want to return 要倒退的天数
+ * @return { array } return an array of N days before today
